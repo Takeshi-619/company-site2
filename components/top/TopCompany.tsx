@@ -56,12 +56,12 @@ function TopCompany() {
         loop={true}
         spaceBetween={10}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[FreeMode, Navigation, Thumbs, Autoplay]}
         className="mySwiper2 my-[100px]">
         {serviceData.map((items, index) => (
           <SwiperSlide key={index}>
@@ -79,25 +79,6 @@ function TopCompany() {
                 <View url={items.url} />
               </div>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <Swiper
-        loop={false}
-        spaceBetween={10}
-        slidesPerView={4}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper mt-[200px] mb-[100px] w-[80%]">
-        {serviceData.map((items, index) => (
-          <SwiperSlide key={index}>
-            <Image
-              src={items.img}
-              alt={items.alt}
-              width={300}
-              height={300}
-              className="px-6 max-md:hidden"></Image>
           </SwiperSlide>
         ))}
       </Swiper>

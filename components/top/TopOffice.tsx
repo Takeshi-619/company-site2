@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useCallback } from "react";
 import Image from "next/image";
 import Btn from "../atoms/Btn";
 
@@ -11,39 +11,55 @@ function TopOffice() {
     "/officeslider6.png",
   ];
 
-  let num = -1;
-  const slider = () => {
-    if (typeof window === "object") {
-      let imgItems = document.querySelectorAll("slide-img");
+  // let num = -1;
 
-      console.log(imgItems);
-      console.log(imgItems[0]);
-      // if (num >= 0){
-      //   imgItems[0]
-      // }
-    }
-  };
-  slider();
-  // viewSlide(".slide-img");
-
-  // function viewSlide(className: string, slideNo = -1) {
+  // const slider = useCallback(() => {
   //   if (typeof window === "object") {
-  //     let imgArray = document.querySelectorAll<HTMLImageElement>(className);
+  //     let imgItems = document.querySelectorAll(".slide-img");
 
-  //     if (slideNo >= 0) {
-  //       imgArray[slideNo].style.opacity = "0";
+  //     console.log(imgItems);
+  //     console.log(imgItems[0]);
+
+  //     if (num >= 0) {
+  //       imgItems[num].style.opacity = "0";
   //     }
-  //     slideNo++;
-  //     if (slideNo >= imgArray.length) {
-  //       slideNo = 0;
+  //     num++;
+  //     if (num >= imgItems.length) {
+  //       num = 0;
   //     }
-  //     imgArray[slideNo].style.opacity = "1";
+  //     imgItems[num].style.opacity = "1";
 
   //     setTimeout(() => {
-  //       viewSlide(className, slideNo);
+  //       slider();
   //     }, 2000);
   //   }
-  // }
+  // });
+  // useEffect(() => {
+  //   slider();
+  // }, [slider]);
+
+  function viewSlide(className: string, slideNo = -1) {
+    if (typeof window === "object") {
+      let imgArray = document.querySelectorAll<HTMLImageElement>(className);
+
+      if (slideNo >= 0) {
+        imgArray[slideNo] && (imgArray[slideNo].style.opacity = "0");
+      }
+      slideNo++;
+      if (slideNo >= imgArray.length) {
+        slideNo = 0;
+      }
+      imgArray[slideNo] && (imgArray[slideNo].style.opacity = "1");
+
+      setTimeout(() => {
+        viewSlide(className, slideNo);
+      }, 2000);
+    }
+  }
+  useEffect(() => {
+    viewSlide(".slide-img");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="top-office py-20 grid grid-cols-2 items-center max-md:block">

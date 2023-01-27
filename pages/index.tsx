@@ -25,7 +25,7 @@ export default function Home() {
         <Header />
         <article className="overflow-hidden">
           <h1 className="relative">
-            <div className="h1-font max-md:text-xl z-10">
+            <div className="h1-font my-auto max-md:text-xl z-10">
               繋がるイマ
               <br />
               広がるミライ

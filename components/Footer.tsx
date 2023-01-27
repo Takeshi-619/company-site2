@@ -21,12 +21,14 @@ function Footer() {
             <Link href={"https://hrmos.co/pages/kddiwebc/jobs"}>Entry</Link>
           </li>
         </ul>
-        <Image
-          src={`/logo_kddi.png`}
-          alt="KDDI Web Comunnicationsのロゴ"
-          height={50}
-          width={100}
-          className="w-[10%] max-md:w-[30%] absolute bottom-[10%] right-[20%] max-md:right-[10%]"></Image>
+        <Link href={"/"}>
+          <Image
+            src={`/logo_kddi.png`}
+            alt="KDDI Web Comunnicationsのロゴ"
+            height={50}
+            width={100}
+            className="w-[10%] max-md:w-[30%] absolute bottom-[10%] right-[20%] max-md:right-[10%]"></Image>
+        </Link>
       </div>
     </>
   );

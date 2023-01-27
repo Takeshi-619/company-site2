@@ -59,7 +59,7 @@ function Interview() {
       </h2>
       {data.map((items, index) => (
         <div key={index}>
-          <div className="flex justify-center items-center mt-[200px] max-md:block">
+          <div className="flex justify-center items-center w-[50%] mx-auto mt-[200px] max-md:block">
             <Image
               src={items.img}
               alt={items.alt}

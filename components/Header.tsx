@@ -16,12 +16,14 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 h-16 items-center flex justify-between border border-solid base-color drop-shadow-md">
       <div>
-        <Image
-          src={`/logo_kddi.png`}
-          alt="KDDI Web Comunnicationsのロゴ"
-          height={50}
-          width={100}
-          className="pl-4 w-full max-md:w-[90%]"></Image>
+        <Link href={"/"}>
+          <Image
+            src={`/logo_kddi.png`}
+            alt="KDDI Web Comunnicationsのロゴ"
+            height={50}
+            width={100}
+            className="pl-4 w-full max-md:w-[90%]"></Image>
+        </Link>
       </div>
       <ul className="w-1/2 flex justify-around items-center max-md:hidden">
         <li className={`${router.asPath === "/" ? tailstyle : ""}`}>
