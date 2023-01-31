@@ -21,8 +21,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <main className="base-color ">
-        <Header />
         <article className="overflow-hidden">
           <h1 className="relative">
             <div className="h1-font my-auto max-md:text-xl z-10">
@@ -59,9 +59,9 @@ export default function Home() {
           <TopCompany />
           <TopData />
           <TopEntry />
-          <Footer />
         </article>
       </main>
+      <Footer />
     </>
   );
 }

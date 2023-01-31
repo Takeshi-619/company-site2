@@ -62,11 +62,11 @@ function TopOffice() {
   }, []);
 
   return (
-    <div className="top-office py-20 grid grid-cols-2 items-center max-md:block">
+    <div className="top-office h-[120%] py-20 grid grid-cols-2 items-center max-md:block">
       <div className="slide">
         {sliderImg.map((items, index) => (
           <Image
-            className="slide-img w-full h-auto left-20 max-md:w-full max-md:left-0 max-md:mx-auto"
+            className="slide-img w-full left-20 max-md:w-full max-md:left-0 max-md:mx-auto"
             key={index}
             src={items}
             alt={"オフィスの写真"}

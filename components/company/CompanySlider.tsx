@@ -26,7 +26,7 @@ function CompanySlider() {
               alt="office"
               height={697}
               width={1044}
-              className="py-[200px] w-[90%] imgg mx-auto max-md:py-[120]"
+              className="py-[200px] w-[90%] max-w-[1200px] mx-auto max-md:py-[120]"
             />
           </SwiperSlide>
         ))}

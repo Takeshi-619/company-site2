@@ -16,12 +16,14 @@ function Company() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <h1>
-        <div className="com-main w-full max-md:bg-contain max-md:-mt-3 max-md:h-[155px] max-md:bg-bottom max-md:bg-no-repeat"></div>
-      </h1>
-      <Service />
-      <Data />
-      <CompanyData />
+      <main className="base-color">
+        <h1>
+          <div className="com-main w-full max-md:bg-contain max-md:-mt-3 max-md:h-[155px] max-md:bg-bottom max-md:bg-no-repeat"></div>
+        </h1>
+        <Service />
+        <Data />
+        <CompanyData />
+      </main>
       <Footer />
     </div>
   );

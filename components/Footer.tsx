@@ -29,6 +29,11 @@ function Footer() {
             width={100}
             className="w-[10%] max-md:w-[30%] absolute bottom-[10%] right-[20%] max-md:right-[10%]"></Image>
         </Link>
+        <p className="text-center">
+          <small>
+            &copy; 2023 KDDI Web Communications Special Office site.
+          </small>
+        </p>
       </div>
     </>
   );
