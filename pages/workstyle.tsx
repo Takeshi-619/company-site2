@@ -99,7 +99,7 @@ function workstyle() {
                 alt={""}
                 height={800}
                 width={900}
-                className="w-[60%] h-auto mb-10 mx-auto"
+                className="w-[60%] h-auto mb-10 mx-auto max-md:w-[90%]"
                 priority></Image>
               <div className="w-[70%] mx-auto  relative">
                 <h3 className="sub-tittle mb-5">{items.text3.h3}</h3>
