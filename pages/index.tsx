@@ -26,9 +26,18 @@ export default function Home() {
         <article className="overflow-hidden">
           <h1 className="relative">
             <div className="h1-font my-auto max-md:text-xl z-10">
-              繋がるイマ
+              <span className="span">繋</span>
+              <span className="span">が</span>
+              <span className="span">る</span>
+              <span className="span">イ</span>
+              <span className="span">マ</span>
               <br />
-              広がるミライ
+              <span className="span">広</span>
+              <span className="span">が</span>
+              <span className="span">る</span>
+              <span className="span">ミ</span>
+              <span className="span">ラ</span>
+              <span className="span">イ</span>
             </div>
             <div className="mainbg  max-md:h-[800px]">
               <Animetion />

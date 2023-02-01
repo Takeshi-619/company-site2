@@ -29,7 +29,7 @@ function Interview() {
     },
     {
       name: "神森 勉（かみもり つとむ）",
-      img: "/kawakami.png",
+      img: "/kamimori.png",
       alt: "神森さんの写真",
       jobCareer: "7年",
       intaview: [
