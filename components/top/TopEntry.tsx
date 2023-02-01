@@ -10,12 +10,12 @@ function TopEntry() {
       </h2>
 
       <Image
-        src={"/dami.jpeg"}
-        alt={"ダミー"}
+        src={"/entry.jpg"}
+        alt={"オフィス正面の写真"}
         height={500}
         width={800}
         priority
-        className="mx-auto w-full h-auto mt-[100px] max-md:bg-contain max-md:h-auto max-md:w-[80%]"
+        className="mx-auto w-[60%] h-auto mt-[100px] max-md:bg-contain max-md:h-auto max-md:w-[80%]"
       />
       <div className="w-[80%] mx-auto">
         <p className="text-center mt-[100px] h4-font font-medium">

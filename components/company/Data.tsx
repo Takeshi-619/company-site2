@@ -56,7 +56,7 @@ function Data() {
               alt="福利厚生"
               height={200}
               width={200}
-              className="w-full h-auto"
+              className="w-full h-auto buruburu-hover"
               onClick={(e) => modol(index)}></Image>
           </div>
         ))}
@@ -69,7 +69,7 @@ function Data() {
                 {svgData[active].text}
               </div>
               <button
-                className="w-1/3 mx-auto px-2 py-1 mb-8 border rounded"
+                className="w-1/3 mx-auto px-2 py-1 mb-8 border border-black rounded"
                 onClick={() => setShow(false)}>
                 close
               </button>

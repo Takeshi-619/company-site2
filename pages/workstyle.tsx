@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import Btn from "../components/atoms/Btn";
 import Close from "../components/atoms/Close";
+import OfficeBtn from "../components/atoms/OfficeBtn";
 
 function workstyle() {
   interface Data {
@@ -99,13 +99,13 @@ function workstyle() {
                 alt={""}
                 height={800}
                 width={900}
-                className="w-full h-auto mb-10"
+                className="w-[60%] h-auto mb-10 mx-auto"
                 priority></Image>
               <div className="w-[70%] mx-auto  relative">
                 <h3 className="sub-tittle mb-5">{items.text3.h3}</h3>
                 <p>{items.text3.p}</p>
                 <div className="my-10 items-center absolute right-0 max-md:bottom-[-38%]">
-                  <Btn url={"/office"} />
+                  <OfficeBtn url={"/office"} />
                 </div>
               </div>
             </div>
