@@ -11,33 +11,6 @@ function TopOffice() {
     "/officeslider6.png",
   ];
 
-  // let num = -1;
-
-  // const slider = useCallback(() => {
-  //   if (typeof window === "object") {
-  //     let imgItems = document.querySelectorAll(".slide-img");
-
-  //     console.log(imgItems);
-  //     console.log(imgItems[0]);
-
-  //     if (num >= 0) {
-  //       imgItems[num].style.opacity = "0";
-  //     }
-  //     num++;
-  //     if (num >= imgItems.length) {
-  //       num = 0;
-  //     }
-  //     imgItems[num].style.opacity = "1";
-
-  //     setTimeout(() => {
-  //       slider();
-  //     }, 2000);
-  //   }
-  // });
-  // useEffect(() => {
-  //   slider();
-  // }, [slider]);
-
   function viewSlide(className: string, slideNo = -1) {
     if (typeof window === "object") {
       let imgArray = document.querySelectorAll<HTMLImageElement>(className);

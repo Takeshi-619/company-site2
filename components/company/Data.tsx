@@ -47,7 +47,7 @@ function Data() {
   return (
     <div>
       <h2 className="mt-[280px] h2-font text-center max-md:mt-[160px]">Data</h2>
-      <div className="mt-[120px] w-[60%] mx-auto grid grid-rows-2 grid-cols-3 max-md:grid-rows-3 max-md:grid-cols-2">
+      <div className="mt-[120px] w-[60%] mx-auto grid grid-rows-2 grid-cols-3 max-md:grid-rows-3 max-md:grid-cols-2 max-md:w-[80%]">
         {svgData.map((items, index) => (
           <div key={index} className="mx-auto p-4">
             <Image
@@ -63,13 +63,17 @@ function Data() {
       </div>
       {show && (
         <div className="fixed z-[999] h-full w-full bg-[rgba(0,0,0,0.3)] top-0 left-0">
-          <div className="absolute inset-0 m-auto w-1/4 h-1/4 base-color">
-            <div className="w-[80%] absolute data">{svgData[active].text}</div>
-            <button
-              className="absolute right-0 w-[20%] mx-auto border"
-              onClick={() => setShow(false)}>
-              close
-            </button>
+          <div className="absolute inset-0 m-auto text-center w-1/2 max-w-sm h-fit max-h-80 base-color rounded max-md:w-[80%] max-md:max-w-xs">
+            <div className="flex flex-col justify-around mx-auto w-[80%]">
+              <div className="w-full mx-auto pt-8 pb-4 text-left">
+                {svgData[active].text}
+              </div>
+              <button
+                className="w-1/3 mx-auto px-2 py-1 mb-8 border rounded"
+                onClick={() => setShow(false)}>
+                close
+              </button>
+            </div>
           </div>
         </div>
       )}

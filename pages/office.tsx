@@ -19,7 +19,7 @@ function Office() {
       <main className="base-color">
         <Header />
         <h1>
-          <div className="off-main w-full max-md:bg-contain max-md:-mt-3 max-md:h-[155px] max-md:bg-bottom max-md:bg-no-repeat"></div>
+          <div className="off-main w-full max-md:bg-cover max-md:-mt-3 max-md:h-[155px] max-md:bg-bottom max-md:bg-no-repeat"></div>
         </h1>
         <Concept />
         <OffSlider />

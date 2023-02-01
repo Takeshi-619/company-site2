@@ -18,7 +18,7 @@ function Company() {
       <Header />
       <main className="base-color">
         <h1>
-          <div className="com-main w-full max-md:bg-contain max-md:-mt-3 max-md:h-[155px] max-md:bg-bottom max-md:bg-no-repeat"></div>
+          <div className="com-main w-full max-md:bg-cover max-md:-mt-3 max-md:h-[155px] max-md:bg-bottom max-md:bg-no-repeat"></div>
         </h1>
         <Service />
         <Data />
