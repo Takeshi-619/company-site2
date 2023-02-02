@@ -50,7 +50,9 @@ function TopCompany() {
 
   return (
     <div>
-      <h2 className="mt-[200px] mb-[150px] text-center h2-font">Company</h2>
+      <h2 className="mt-[200px] mb-[150px] text-center h2-font max-md:mt-[100px] max-md:mb-[70px]">
+        Company
+      </h2>
       <h3 className="h4-font mb-[100px] text-center">service</h3>
       <Swiper
         loop={true}
@@ -59,7 +61,6 @@ function TopCompany() {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs, Autoplay]}
         className="mySwiper2 my-[100px]">

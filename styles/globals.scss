@@ -58,12 +58,27 @@ img {
   transition: 0.8s;
   background-color: #feaa48;
 }
+.office-btn {
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+.office-btn:hover {
+  transition: 0.8s;
+  background-color: #000000;
+}
 .btn-text {
   color: #feaa48;
 }
 .btn-text:hover {
   transition: 0.8s;
   color: #fff6ec;
+}
+.office-btn-text {
+  color: #000000;
+}
+.office-btn-text:hover {
+  transition: 0.8s;
+  color: #ffffff;
 }
 
 .writing-mode {

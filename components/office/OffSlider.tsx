@@ -87,8 +87,10 @@ function OffSlider() {
 
   return (
     <div>
-      <h2 className="h2-font text-center mt-[280px] pb-[100px]">Work Space</h2>
-      <div className="slider-area pt-5 off-bg h-[1000px] w-full max-w-[1920px] max-h-[1080px] overflow-hidden ">
+      <h2 className="h2-font text-center mt-[280px] pb-[100px] max-md:mt-[100px]">
+        Work Space
+      </h2>
+      <div className="slider-area pt-5 off-bg h-[1000px] w-full max-w-[1920px] max-h-[1080px] overflow-hidden max-md:h-[700px] ">
         <div className="slider-wrap relative" ref={wrap}>
           <div className="slider-items flex absolute" ref={items}>
             {sliderData.map((items, index) => (

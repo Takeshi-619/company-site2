@@ -81,8 +81,8 @@ function CompanyData() {
     },
   ];
   return (
-    <div className="mt-[280px] text-center max-md:mt-[160px]">
-      <h2 className=" h2-font">Company</h2>
+    <div className="mt-[280px] text-center max-md:mt-[100px]">
+      <h2 className="h2-font">Company</h2>
       <CompanySlider />
       <div>
         {Data.map((items, index) => (
@@ -90,7 +90,7 @@ function CompanyData() {
             key={index}
             className=" w-[50%] mx-auto text-left grid grid-cols-2 grid-rows-2 max-md:block max-md:w-[90%] max-md:py-2">
             <dt className="mr-5 max-md:m-0">{items.dt}</dt>
-            <dd className="pl-4">{items.dd}</dd>
+            <dd className="pl-8">{items.dd}</dd>
           </dl>
         ))}
       </div>

@@ -46,8 +46,8 @@ function Data() {
 
   return (
     <div>
-      <h2 className="mt-[280px] h2-font text-center max-md:mt-[160px]">Data</h2>
-      <div className="mt-[120px] w-[60%] mx-auto grid grid-rows-2 grid-cols-3 max-md:grid-rows-3 max-md:grid-cols-2 max-md:w-[80%]">
+      <h2 className="mt-[280px] h2-font text-center max-md:mt-[100px]">Data</h2>
+      <div className="mt-[120px] w-[60%] mx-auto grid grid-rows-2 grid-cols-3 max-md:grid-rows-3 max-md:grid-cols-2 max-md:w-[80%] max-md:mt-[80px]">
         {svgData.map((items, index) => (
           <div key={index} className="mx-auto p-4">
             <Image

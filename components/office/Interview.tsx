@@ -4,7 +4,7 @@ import Image from "next/image";
 function Interview() {
   const data = [
     {
-      name: "川上 智恵（かわかみ ちえ）",
+      name: "川上 智恵",
       img: "/kawakami.png",
       alt: "川上さんの写真",
       jobCareer: "7年",
@@ -28,7 +28,7 @@ function Interview() {
       ],
     },
     {
-      name: "神森 勉（かみもり つとむ）",
+      name: "神森 勉",
       img: "/kamimori.png",
       alt: "神森さんの写真",
       jobCareer: "7年",
@@ -54,22 +54,23 @@ function Interview() {
   ];
   return (
     <div className="mb-20">
-      <h2 className="h2-font text-center mt-[280px] max-md:mt-[160px]">
+      <h2 className="h2-font text-center mt-[280px] max-md:mt-[100px] ">
         Interview
       </h2>
       {data.map((items, index) => (
         <div key={index}>
-          <div className="flex justify-center items-center w-[50%] mx-auto mt-[200px] max-md:block">
-            <Image
-              src={items.img}
-              alt={items.alt}
-              height={300}
-              width={300}
-              className="mx-auto"></Image>
-            <div className="pl-6 mx-auto max-md:pt-10">
-              <h3>名前</h3>
-              <p className="pl-4 h4-font max-md:text-xl">{items.name}</p>
-              <h3>社員歴</h3>
+          <div className="flex justify-center items-center w-[50%] mx-auto mt-[200px] max-md:mt-[100px] max-md:block">
+            <div className="mx-auto ">
+              <Image
+                src={items.img}
+                alt={items.alt}
+                height={300}
+                width={300}></Image>
+            </div>
+            <div className="pl-6 mx-auto max-md:pt-10 max-md:text-center">
+              <h3 className="pb-2">名前</h3>
+              <p className="pl-4 pb-4 h4-font max-md:text-xl">{items.name}</p>
+              <h3 className="pb-2">社員歴</h3>
               <p className="pl-4 h4-font max-md:text-xl">{items.jobCareer}</p>
             </div>
           </div>

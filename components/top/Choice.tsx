@@ -115,7 +115,7 @@ function Choice() {
       {choiceData.map((items, index) =>
         items.type === "A" ? (
           <div
-            className="flex justify-center items-center mt-[260px] max-md:block"
+            className="flex justify-center items-center mt-[260px] max-md:block max-md:mt-[120px]"
             key={index}>
             <Image
               src={items.img}
@@ -139,7 +139,7 @@ function Choice() {
           </div>
         ) : (
           <div key={index}>
-            <div className="flex flex-row-reverse justify-center items-center mt-[260px] max-md:block">
+            <div className="flex flex-row-reverse justify-center items-center mt-[260px] max-md:block max-md:mt-[120px]">
               <Image
                 src={items.img}
                 alt={items.alt}
@@ -155,13 +155,13 @@ function Choice() {
                 ))}
               </div>
             </div>
-            <div className="mt-[180px]">
+            <div className="mt-[180px] max-md:mt-[60px]">
               <Btn url={items.url} />
             </div>
           </div>
         )
       )}
-      <div className="mt-[200px] mb-[280px]">
+      <div className="mt-[200px] mb-[280px] max-md:mt-[60px] max-md:mb-[100px]">
         <Btn url={"/workstyle"} />
       </div>
     </>

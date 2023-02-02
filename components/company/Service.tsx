@@ -38,12 +38,14 @@ function Service() {
   ];
   return (
     <div>
-      <h2 className="mt-[150px] text-center h2-font mb-[130px]">service</h2>
+      <h2 className="mt-[150px] text-center h2-font mb-[130px] max-md:mt-[100px] max-md:mb-[80px]">
+        service
+      </h2>
 
       <div className=" pt-[150px] pb-[100px] grid grid-cols-2 grid-rows-2 border w-[85%] mx-auto bg rounded-md max-md:block">
         {serviceData.map((items, index) => (
           <div key={index} className="pb-[50px]">
-            <div className="pt-10 px-15 w-[60%] justify-center items-center border rounded-3xl bg-white max-md:w-[90%] h-full mx-auto">
+            <div className="pt-10 px-15 w-[60%] justify-center items-center border rounded-3xl min-w-[320px] bg-white max-md:w-[90%] max-md:max-w-[320px] h-full mx-auto">
               <Image
                 src={items.img}
                 alt={items.alt}

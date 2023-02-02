@@ -23,15 +23,17 @@ export default function Home() {
       </Head>
       <Header />
       <main className="base-color">
-        <article className="">
+        <article>
           <h1 className="relative">
             <div className="w-full h-full">
               <Fv />
-              <Allow />
+              <div className="max-md:hidden">
+                <Allow />
+              </div>
             </div>
           </h1>
-          <section className="m-[280px] relative  w-2/5 mx-auto max-md:w-3/4">
-            <div className="p-8 absolute max-md:top-[-100px] read-bgc">
+          <section className="mt-[280px]  w-2/5 mx-auto max-md:w-[80%] max-md:mt-[100px]">
+            <div className="p-8 read-bgc">
               <h2 className="h2-font text-center max-md:text-xl max-md:font-bold">
                 ミライのカタチをつくる
               </h2>
@@ -41,7 +43,7 @@ export default function Home() {
             </div>
           </section>
           <section>
-            <h2 className="h2-font text-center mt-[780px] max-md:text-xl">
+            <h2 className="h2-font text-center mt-[280px] max-md:text-xl max-md:mt-[100px]">
               選択肢を増やす選択を
             </h2>
             <Choice />

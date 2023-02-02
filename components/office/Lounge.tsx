@@ -5,10 +5,11 @@ import View from "../atoms/View";
 function Lounge() {
   return (
     <div className="my-[20px]">
-      <h2 className="h2-font text-center mt-[100px] mb-[200px] max-md:flex flex-col">
-        <div>SHARE LUNGE</div> <span>×</span> <div>FLAT BASE</div>
+      <h2 className="h2-font text-center mt-[100px] mb-[200px] max-md:flex flex-col max-md:mb-[100px]">
+        <div className="pb-3">SHARE LUNGE</div> <span className="mb-3">×</span>
+        <div>FLAT BASE</div>
       </h2>
-      <div className="relative">
+      <div>
         <div className="flex items-center bg-white max-md:block">
           <Image
             src={"/lounge.jpg"}
@@ -47,7 +48,7 @@ function Lounge() {
             </p>
           </div>
         </div>
-        <div className="items-center mt-[120px]">
+        <div className="items-center mt-[120px] max-md:mt-[60px]">
           <View url={"https://www.flat-base.com/"} />
         </div>
       </div>

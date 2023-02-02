@@ -21,7 +21,7 @@ function Fv() {
   }, []);
   return (
     <div className="relative">
-      <div className="h-full w-full" ref={container} id="adsdsd"></div>
+      <div className="h-full w-full" ref={container}></div>
       <div className="h1-font my-auto max-md:text-xl z-10 m-auto">
         <span className="span">繋</span>
         <span className="span">が</span>
