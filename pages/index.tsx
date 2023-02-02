@@ -6,7 +6,6 @@ import Choice from "../components/top/Choice";
 import TopOffice from "../components/top/TopOffice";
 import TopCompany from "../components/top/TopCompany";
 import TopData from "../components/top/TopData";
-import Animetion from "../components/animetion/Animetion";
 import Allow from "../components/animetion/Allow";
 import TopEntry from "../components/top/TopEntry";
 import Fv from "../components/animetion/Fv";

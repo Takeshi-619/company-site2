@@ -28,7 +28,7 @@ function TopData() {
         ))}
       </div>
       <div className="mt-20">
-        <Btn url={"/conpany"} />
+        <Btn url={"/company"} />
       </div>
     </div>
   );
