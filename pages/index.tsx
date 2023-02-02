@@ -9,6 +9,7 @@ import TopData from "../components/top/TopData";
 import Animetion from "../components/animetion/Animetion";
 import Allow from "../components/animetion/Allow";
 import TopEntry from "../components/top/TopEntry";
+import Fv from "../components/animetion/Fv";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,24 +24,10 @@ export default function Home() {
       </Head>
       <Header />
       <main className="base-color ">
-        <article className="overflow-hidden">
+        <article className="">
           <h1 className="relative">
-            <div className="h1-font my-auto max-md:text-xl z-10">
-              <span className="span">繋</span>
-              <span className="span">が</span>
-              <span className="span">る</span>
-              <span className="span">イ</span>
-              <span className="span">マ</span>
-              <br />
-              <span className="span">広</span>
-              <span className="span">が</span>
-              <span className="span">る</span>
-              <span className="span">ミ</span>
-              <span className="span">ラ</span>
-              <span className="span">イ</span>
-            </div>
-            <div className="mainbg  max-md:h-[800px]">
-              <Animetion />
+            <div className="w-full h-full max-md:h-[800px]">
+              <Fv />
               <Allow />
             </div>
           </h1>

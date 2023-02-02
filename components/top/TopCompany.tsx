@@ -56,7 +56,7 @@ function TopCompany() {
         loop={true}
         spaceBetween={10}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         navigation={true}

@@ -20,26 +20,31 @@ img {
   text-align: center;
   color: #ffffff;
 }
+
 .h2-font {
   font-family: "Noto Sans JP";
   font-size: 32px;
   font-weight: medium;
 }
+
 .h4-font {
   font-family: "Noto Sans JP";
   font-size: 24px;
   font-weight: medium;
 }
+
 .sub-tittle {
   font-family: "Noto Sans JP";
   font-size: 20px;
   font-weight: medium;
 }
+
 .choice-font {
   font-family: "Hiragino Mincho Pro";
   font-size: 32px;
   font-weight: 500;
 }
+
 .one {
   font-family: "Rampart One", cursive;
   font-size: 40px;
@@ -53,13 +58,16 @@ img {
   border: 1px solid #feaa48;
   border-radius: 30px;
 }
+
 .btn:hover {
   transition: 0.8s;
   background-color: #feaa48;
 }
+
 .btn-text {
   color: #feaa48;
 }
+
 .btn-text:hover {
   transition: 0.8s;
   color: #fff6ec;
@@ -69,7 +77,6 @@ img {
   writing-mode: vertical-rl;
 }
 
-// -----fv--------
 .span {
   color: transparent;
   animation: blur 10s ease-out infinite;
@@ -80,46 +87,57 @@ img {
   animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
 }
+
 .span:nth-child(2) {
   animation-delay: 0.4s;
   -webkit-animation-delay: 0.4s;
 }
+
 .span:nth-child(3) {
   animation-delay: 0.5s;
   -webkit-animation-delay: 0.5s;
 }
+
 .span:nth-child(4) {
   animation-delay: 0.6s;
   -webkit-animation-delay: 0.6s;
 }
+
 .span:nth-child(5) {
   animation-delay: 0.7s;
   -webkit-animation-delay: 0.7s;
 }
+
 .span:nth-child(6) {
   animation-delay: 0.8s;
   -webkit-animation-delay: 0.8s;
 }
+
 .span:nth-child(7) {
   animation-delay: 0.9s;
   -webkit-animation-delay: 0.9s;
 }
+
 .span:nth-child(8) {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
 }
+
 .span:nth-child(9) {
   animation-delay: 1.1s;
   -webkit-animation-delay: 1.1s;
 }
+
 .span:nth-child(10) {
   animation-delay: 1.2s;
   -webkit-animation-delay: 1.2s;
 }
+
 .span:nth-child(11) {
   animation-delay: 1.3s;
   -webkit-animation-delay: 1.3s;
 }
+
 .span:nth-child(12) {
   animation-delay: 1.4s;
   -webkit-animation-delay: 1.4s;
@@ -153,7 +171,6 @@ img {
     opacity: 0;
   }
 }
-
 @-webkit-keyframes blur {
   0% {
     text-shadow: 0 0 100px #fff;
@@ -182,47 +199,54 @@ img {
     opacity: 0;
   }
 }
-
-// ------TOP---------
 .mainbg {
   height: 972px;
   background-image: url("/main.svg");
   background-size: cover;
   position: relative;
 }
+
 .off-main {
   height: 673px;
   background-image: url("/off-main.png");
   background-size: cover;
 }
+
 .com-main {
   height: 673px;
   background-image: url("/com-main.png");
   background-size: cover;
 }
+
 .base-color {
   background-color: #fff6ec;
 }
+
 .link-svg::after {
   background-image: url("/link.svg");
 }
+
 .read-p {
   width: 639px;
 }
+
 .read-bgc {
   background: rgba(249, 249, 249, 0.137);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
+
 .top-office {
   background-image: url("/grain.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .slide {
   position: relative;
   height: 400px;
 }
+
 .slide-img {
   position: absolute;
   opacity: 0;
@@ -232,13 +256,13 @@ img {
   object-fit: contain;
 }
 
-// ------OFFICE---------
 .off-bg {
   background-image: url("/tree.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .concept-border {
   border: 2px solid #000;
   border-radius: 1%;
@@ -246,10 +270,10 @@ img {
   filter: drop-shadow(16px 16px 5px #feaa48);
 }
 
-// ------COMPANY---------
 .view {
   position: relative;
 }
+
 .view::after {
   content: "";
   background-image: url("/link2.svg");
@@ -262,6 +286,7 @@ img {
   bottom: 50%;
   right: 8%;
 }
+
 .view:hover::after {
   content: "";
   transition: 0.8s;
@@ -275,6 +300,7 @@ img {
   bottom: 50%;
   right: 8%;
 }
+
 .data {
   top: 50%;
   left: 50%;
@@ -283,12 +309,12 @@ img {
   -ms-transform: translate(-50%, -50%);
 }
 
-// ------スクロールアニメーション---------
 .load-fade {
   opacity: 0;
   visibility: hidden;
   transition: all 2s;
 }
+
 .load-fade.is-show {
   opacity: 1;
   visibility: visible;
@@ -299,12 +325,12 @@ img {
   transform: translateY(30px);
   transition: opacity 1.5s, transform 1s;
 }
+
 .fade.active {
   opacity: 1;
   transform: translateY(0px);
 }
 
-// ----------topアニメーション----------------
 .type {
   position: relative;
   width: 100%;
@@ -312,20 +338,15 @@ img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    background: linear-gradient(
-      180deg,
-      rgba(#000, 0) 0,
-      rgba(#000, 0.8) 80%,
-      rgba(#000, 0.8) 100%
-    );
-  }
+}
+.type::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
 }
 
 .type a {
@@ -345,34 +366,33 @@ img {
   writing-mode: vertical-lr;
   transition: 0.2s;
   overflow: hidden;
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 1px;
-    height: 100px;
-    background: #fff;
-  }
-  &:hover {
-    opacity: 0.5;
-  }
+}
+.type a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: 100px;
+  background: #fff;
+}
+.type a:hover {
+  opacity: 0.5;
 }
 
-#type06 a {
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 1px;
-    height: 100px;
-    background: rgba(#fff, 0.4);
-  }
-  &::after {
-    animation: sdl06 1.5s cubic-bezier(1, 0, 0, 1) infinite;
-  }
+#type06 a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.4);
 }
+#type06 a::after {
+  animation: sdl06 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
 @keyframes sdl06 {
   0% {
     transform: scale(1, 0);
@@ -391,8 +411,6 @@ img {
     transform-origin: 0 100%;
   }
 }
-
-// ------hover--------
 .buruburu-hover:hover {
   display: inline-block;
   animation: hurueru 0.1s infinite;
@@ -414,4 +432,4 @@ img {
   100% {
     transform: translate(0px, 0px) rotateZ(0deg);
   }
-}
+}/*# sourceMappingURL=globals.css.map */
