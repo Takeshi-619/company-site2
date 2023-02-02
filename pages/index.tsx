@@ -23,15 +23,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="base-color ">
+      <main className="base-color">
         <article className="">
           <h1 className="relative">
-            <div className="w-full h-full max-md:h-[800px]">
+            <div className="w-full h-full">
               <Fv />
               <Allow />
             </div>
           </h1>
-          <section className=" m-[280px] relative  w-2/5 mx-auto max-md:w-3/4">
+          <section className="m-[280px] relative  w-2/5 mx-auto max-md:w-3/4">
             <div className="p-8 absolute max-md:top-[-100px] read-bgc">
               <h2 className="h2-font text-center max-md:text-xl max-md:font-bold">
                 ミライのカタチをつくる

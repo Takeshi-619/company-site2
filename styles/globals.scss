@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 img {
   max-width: none;
 }
@@ -345,13 +346,14 @@ img {
   writing-mode: vertical-lr;
   transition: 0.2s;
   overflow: hidden;
+
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 1px;
-    height: 100px;
+    height: 50%;
     background: #fff;
   }
   &:hover {
@@ -366,7 +368,7 @@ img {
     bottom: 0;
     left: 50%;
     width: 1px;
-    height: 100px;
+    height: 50%;
     background: rgba(#fff, 0.4);
   }
   &::after {

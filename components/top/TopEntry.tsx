@@ -21,7 +21,7 @@ function TopEntry() {
         <p className="text-center mt-[100px] h4-font font-medium">
           KWCという選択肢を選び、人生の選択肢を増やそう
         </p>
-        <div className="my-20">
+        <div className="py-20">
           <View url={"https://hrmos.co/pages/kddiwebc/jobs"}></View>
         </div>
       </div>
