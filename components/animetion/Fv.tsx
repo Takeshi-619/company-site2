@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-web";
 import ld from "../../src/animationData/animation.json";
 
 let lt: any = null;
 function Fv() {
+  const [state, setState] = useState(false);
   const container = useRef<HTMLDivElement>(null!);
   function lottieAnime() {
     lt = Lottie.loadAnimation({
@@ -21,7 +22,7 @@ function Fv() {
   }, []);
   return (
     <div className="relative">
-      <div className="h-full w-full" ref={container}></div>
+      <div className="h-full w-full" ref={container} id="adsdsd"></div>
       <div className="h1-font my-auto max-md:text-xl z-10 m-auto">
         <span className="span">繋</span>
         <span className="span">が</span>

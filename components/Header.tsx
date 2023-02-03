@@ -27,17 +27,23 @@ function Header() {
       </div>
       <ul className="w-1/2 flex justify-around items-center max-md:hidden">
         <li className={`${router.asPath === "/" ? tailstyle : ""}`}>
-          <Link href={"/"} className="text-base max-md:text-sm">
+          <Link
+            href={"https://company-site-one.vercel.app/"}
+            className="text-base max-md:text-sm">
             Top
           </Link>
         </li>
         <li className={`${router.asPath === "/office" ? tailstyle : ""}`}>
-          <Link href={"/office"} className="text-base max-md:text-sm">
+          <Link
+            href={"https://company-site-one.vercel.app/office"}
+            className="text-base max-md:text-sm">
             Office
           </Link>
         </li>
         <li className={`${router.asPath === "/company" ? tailstyle : ""}`}>
-          <Link href={"/company"} className="text-base max-md:text-sm">
+          <Link
+            href={"https://company-site-one.vercel.app/company"}
+            className="text-base max-md:text-sm">
             Company
           </Link>
         </li>
