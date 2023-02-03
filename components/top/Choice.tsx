@@ -139,7 +139,7 @@ function Choice() {
           </div>
         ) : (
           <div key={index}>
-            <div className="flex flex-row-reverse justify-center items-center mt-[260px] max-md:block max-md:mt-[120px]">
+            <div className="flex flex-row-reverse justify-center items-center mt-[120px] max-md:block max-md:mt-[120px]">
               <Image
                 src={items.img}
                 alt={items.alt}
@@ -155,13 +155,13 @@ function Choice() {
                 ))}
               </div>
             </div>
-            <div className="mt-[180px] max-md:mt-[60px]">
+            <div className="mt-[80px] max-md:mt-[60px]">
               <Btn url={items.url} />
             </div>
           </div>
         )
       )}
-      <div className="mt-[200px] mb-[280px] max-md:mt-[60px] max-md:mb-[100px]">
+      <div className="mt-[80px] mb-[280px] max-md:mt-[60px] max-md:mb-[60px]">
         <Btn url={"/workstyle"} />
       </div>
     </>

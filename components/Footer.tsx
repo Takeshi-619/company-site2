@@ -9,17 +9,13 @@ function Footer() {
       <div className="bg relative">
         <ul className="w-3/4 max-md:w-[80%] max-md:pl-0 mx-auto flex flex-col pl-20">
           <li className="mt-14 mb-7 text-2xl font-bold max-md:text-lg">
-            <Link href={"https://company-site-one.vercel.app/"}>Top</Link>
+            <Link href={"/"}>Top</Link>
           </li>
           <li className="my-7 text-2xl font-bold max-md:text-lg">
-            <Link href={"https://company-site-one.vercel.app/office"}>
-              Office
-            </Link>
+            <Link href={"/office"}>Office</Link>
           </li>
           <li className="my-7 text-2xl font-bold max-md:text-lg">
-            <Link href={"https://company-site-one.vercel.app/company"}>
-              Company
-            </Link>
+            <Link href={"/company"}>Company</Link>
           </li>
           <li className="mt-7 mb-14 text-2xl font-bold max-md:text-lg">
             <Link href={"https://hrmos.co/pages/kddiwebc/jobs"}>Entry</Link>
