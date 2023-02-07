@@ -2,10 +2,27 @@ import React, { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-web";
 import ld from "../../src/animationData/animation.json";
 
+import { useRouter } from "next/router";
+
 let lt: any = null;
 function Fv() {
-  const [state, setState] = useState(false);
   const container = useRef<HTMLDivElement>(null!);
+
+  const router = useRouter();
+  useEffect(() => {
+    router.events.on("routeChangeComplete", handleChangeRoute);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleChangeRoute);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  function handleChangeRoute(path: string) {
+    console.log("complete");
+    lottieAnime();
+  }
+
   function lottieAnime() {
     lt = Lottie.loadAnimation({
       container: container.current,

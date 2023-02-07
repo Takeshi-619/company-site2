@@ -13,6 +13,7 @@ function Header() {
 
   const router = useRouter();
   console.log(router.asPath);
+
   return (
     <header className="sticky top-0 z-50 h-16 items-center flex justify-between border border-solid base-color drop-shadow-md">
       <div>
@@ -27,7 +28,13 @@ function Header() {
       </div>
       <ul className="w-1/2 flex justify-around items-center max-md:hidden">
         <li className={`${router.asPath === "/" ? tailstyle : ""}`}>
-          <Link href={"/"} className="text-base max-md:text-sm">
+          <Link
+            href={"/"}
+            className="text-base max-md:text-sm"
+            // onClick={(e) => {
+            //   clickHandle(e);
+            // }}>
+          >
             Top
           </Link>
         </li>
@@ -42,7 +49,10 @@ function Header() {
           </Link>
         </li>
         <li>
-          <Link href={"https://hrmos.co/pages/kddiwebc/jobs"}>
+          <Link
+            href={"https://hrmos.co/pages/kddiwebc/jobs"}
+            rel="noopener noreferrer"
+            target="_blank">
             <div className="text-base max-md:text-sm">Entry</div>
           </Link>
         </li>
@@ -83,7 +93,10 @@ function Header() {
           </Link>
         </li>
         <li>
-          <Link href={"https://hrmos.co/pages/kddiwebc/jobs"}>
+          <Link
+            href={"https://hrmos.co/pages/kddiwebc/jobs"}
+            rel="noopener noreferrer"
+            target="_blank">
             <div className="text-base max-md:text-xl">Entry</div>
           </Link>
         </li>

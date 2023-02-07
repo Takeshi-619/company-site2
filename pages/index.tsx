@@ -9,23 +9,10 @@ import TopData from "../components/top/TopData";
 import Allow from "../components/animetion/Allow";
 import TopEntry from "../components/top/TopEntry";
 import Fv from "../components/animetion/Fv";
-import { useEffect } from "react";
-import { type } from "os";
-import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  // const load = () => {
-  //   if (typeof window === "object") {
-  //     window.location.reload();
-  //   }
-  // };
-  // load();
-
-  // useEffect(() => {
-  //   location.reload();
-  // }, []);
   return (
     <>
       <Head>

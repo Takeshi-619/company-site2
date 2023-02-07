@@ -20,19 +20,19 @@ function Service() {
     {
       img: "/jindo.png",
       alt: "ジンドゥーサービスのロゴ",
-      url: "https://www.cpi.ad.jp/",
+      url: "https://www.jimdo.com/jp/",
       text: `表現をもっとカンタンに`,
     },
     {
       img: "/twilio.png",
       alt: "Twilioサービスのロゴ",
-      url: "https://www.cpi.ad.jp/",
+      url: "https://cloudapi.kddi-web.com/",
       text: `圃場を常に見守る。`,
     },
     {
       img: "/teru.png",
       alt: "てるちゃんサービスのロゴ",
-      url: "https://www.cpi.ad.jp/",
+      url: "https://www.tel-chan.com/",
       text: `繋ぐをもっと手軽に。`,
     },
   ];

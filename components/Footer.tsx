@@ -18,7 +18,12 @@ function Footer() {
             <Link href={"/company"}>Company</Link>
           </li>
           <li className="mt-7 mb-14 text-2xl font-bold max-md:text-lg">
-            <Link href={"https://hrmos.co/pages/kddiwebc/jobs"}>Entry</Link>
+            <Link
+              href={"https://hrmos.co/pages/kddiwebc/jobs"}
+              rel="noopener noreferrer"
+              target="_blank">
+              Entry
+            </Link>
           </li>
         </ul>
         <Link href={"/"}>
